@@ -5,6 +5,9 @@
 ### Setup conda env
 ### Setup project and docker (https://fastapi.tiangolo.com/deployment/docker/)
 ### Setup routes
+### Test docker deploy
+### Start creating sql models (https://sqlmodel.tiangolo.com/)
+### Start creating CRUD APIs
 
 sudo docker build -t myimage .
 sudo docker run -d --name mycontainer -p 80:80 myimage
