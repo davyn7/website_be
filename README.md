@@ -10,6 +10,7 @@
 ### Start creating CRUD APIs
 ### Start with Journey CRUD, test as you go
 ### Setup folders for every other CRUD feature
+### Move stuff to .env
 
 sudo docker build -t myimage .
 sudo docker run -d --name mycontainer -p 80:80 myimage

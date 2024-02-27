@@ -2,3 +2,6 @@ fastapi
 pydantic
 uvicorn
 sqlmodel
+fastapi-mail
+python-dotenv
+email-validator

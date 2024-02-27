@@ -55,7 +55,7 @@ async def updateJourney(id: int, update: JourneyUpdate):
         if not journey:
             raise HTTPException(status_code=404, detail="Journey not found")
         for key, value in update.dict().items():
-            if value is not None and key is not "id":
+            if value is not None and key != "id":
                 setattr(journey, key, value)
         session.add(journey)
         session.commit()
