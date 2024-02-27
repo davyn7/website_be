@@ -8,6 +8,8 @@
 ### Test docker deploy
 ### Start creating sql models (https://sqlmodel.tiangolo.com/)
 ### Start creating CRUD APIs
+### Start with Journey CRUD, test as you go
+### Setup folders for every other CRUD feature
 
 sudo docker build -t myimage .
 sudo docker run -d --name mycontainer -p 80:80 myimage

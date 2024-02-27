@@ -20,7 +20,7 @@ async def getJourneyHighlights():
     with Session(engine) as session:
         # journeys = session.exec(select(Journey).options(load_only("name", "short_description"))).all()
         journeys = session.exec(select(Journey)).all()
-        journeys = [{"name": journey.name, "short_description": journey.short_description} for journey in journeys]
+        journeys = [{"id": journey.id, "name": journey.name, "short_description": journey.short_description} for journey in journeys]
         return journeys, {"result": "Journey Highlights Retrieved"}
 
 # Get all journeys

@@ -12,7 +12,7 @@ class Journey(SQLModel, table=True):
     month: Optional[int]
     day: Optional[int]
 
-# Create a journey model
+# Create a journey update model
 class JourneyUpdate(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     name: Optional[str]
